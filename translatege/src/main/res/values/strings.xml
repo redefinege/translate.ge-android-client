@@ -1,8 +1,8 @@
 <resources>
     <!-- Application general -->
     <string name="app_name" translatable="false">Translate.ge</string>
-    <string name="version_name" translatable="false">"1.1"</string>
-    <string name="version_code" translatable="false">2</string>
+    <string name="version_name" translatable="false">"1.2"</string>
+    <string name="version_code" translatable="false">3</string>
     <string name="dummy_text" translatable="false">Dummy Text</string>
 
     <!-- Common -->
