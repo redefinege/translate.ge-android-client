@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="favourites"/>
+    <include domain="sharedpref" path="ge.redefine.translatege_preferences"/>
+</full-backup-content>

@@ -1,0 +1,47 @@
+<resources>
+    <!-- Application general -->
+    <string name="app_name" translatable="false">Translate.ge</string>
+    <string name="version_name" translatable="false">"1.1"</string>
+    <string name="version_code" translatable="false">2</string>
+    <string name="dummy_text" translatable="false">Dummy Text</string>
+
+    <!-- Common -->
+    <string name="settings">Settings</string>
+    <string name="favourites">Favourites</string>
+    <string name="search">Search</string>
+    <string name="voiceInput">Voice Input</string>
+    <string name="delete">Delete</string>
+    <string name="choose">Choose</string>
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Dialogs -->
+    <string name="dialogTitleWait">Please, wait…</string>
+    <string name="dialogTitleDownloadPrompt">Do you want to download offline dictionary?</string>
+
+    <!-- Information messages -->
+    <string name="noResultsFound">No results found</string>
+    <string name="noNetwork">No network connection</string>
+    <string name="noQueryText">Search…</string>
+    <string name="notSupported">Not supported</string>
+    <string name="textCopied">Text Copied</string>
+
+    <!-- Descriptions -->
+    <string name="descFavourites">Add to favourites</string>
+    <string name="descTTS">Speak word</string>
+    <string name="descCopy">Copy text</string>
+
+    <!-- Preferences -->
+    <string name="prefCatGeneral">General</string>
+    <string name="prefCatAbout">About</string>
+    <string name="prefLanguage">Language</string>
+    <string name="prefDownload">Download offline dictionary</string>
+    <string name="prefDownloadedSummary">Offline dictionary version: %d</string>
+    <string name="prefNotDownloadedSummary">Offline dictionary is not downloaded, click to download</string>
+    <string name="prefNoUpdatesContent">Dictionary update is not available</string>
+    <string name="prefUpdateContent">Version: %1$s\nDownload size: %2$s\nUnpacked size: %3$s</string>
+    <string name="prefLicenses">Open source licenses</string>
+    <string name="prefLicensesSummary">License details for open source software</string>
+    <string name="prefVersion">Version</string>
+
+</resources>

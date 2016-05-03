@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_favourites"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_favourites"
+        style="@android:style/TextAppearance.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingBottom="@dimen/list_card_vertical_margin"
+        android:paddingLeft="@dimen/list_card_left_margin"
+        android:paddingRight="@dimen/list_card_left_margin"
+        android:paddingTop="@dimen/list_card_vertical_margin"
+        android:textColor="@color/colorText" />
+
+    <ImageButton
+        android:id="@+id/button_delete_favourites"
+        style="@style/Button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_delete_black_24dp" />
+
+</RelativeLayout>

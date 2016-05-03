@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="langEN" translatable="false">English</string>
+    <string name="langKA" translatable="false">ქართული</string>
+    <string name="langDefault" translatable="false">@string/langEN</string>
+
+    <string-array name="langArray" translatable="false">
+        <item>@string/langEN</item>
+        <item>@string/langKA</item>
+    </string-array>
+
+    <string-array name="langCodesArray" translatable="false">
+        <item>en</item>
+        <item>ka</item>
+    </string-array>
+</resources>

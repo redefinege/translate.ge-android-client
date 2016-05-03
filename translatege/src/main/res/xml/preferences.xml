@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="first_level"
+                  android:title="@string/settings">
+
+    <PreferenceCategory android:title="@string/prefCatGeneral">
+
+        <ListPreference
+            android:defaultValue="@string/langDefault"
+            android:entries="@array/langArray"
+            android:entryValues="@array/langArray"
+            android:key="pref_language"
+            android:summary="%s"
+            android:title="@string/prefLanguage"/>
+
+        <Preference
+            android:key="pref_download"
+            android:summary=""
+            android:title="@string/prefDownload"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/prefCatAbout">
+
+        <Preference
+            android:key="pref_licenses"
+            android:summary="@string/prefLicensesSummary"
+            android:title="@string/prefLicenses"/>
+
+        <Preference
+            android:key="pref_version"
+            android:summary="@string/version_name"
+            android:title="@string/prefVersion"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

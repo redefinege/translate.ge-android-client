@@ -1,0 +1,41 @@
+<resources>
+    <!-- Common -->
+    <string name="settings">პარამეტრები</string>
+    <string name="favourites">რჩეულები</string>
+    <string name="search">ძებნა</string>
+    <string name="voiceInput">მიკროფონი</string>
+    <string name="delete">წაშლა</string>
+    <string name="choose">არჩევა</string>
+    <string name="download">ჩამოტვირთვა</string>
+    <string name="cancel">გაუქმება</string>
+
+    <!-- Dialogs -->
+    <string name="dialogTitleWait">გთხოვთ, დაელოდეთ…</string>
+    <string name="dialogTitleDownloadPrompt">გსურთ ლექსიკონის ჩამოტვირთვა?</string>
+
+    <!-- Information messages -->
+    <string name="noResultsFound">ძებნა უშედეგოდ დასრულდა</string>
+    <string name="noNetwork">არ არის კავშირი ინტერნეტთან</string>
+    <string name="noQueryText">ძებნა…</string>
+    <string name="notSupported">არ არის მხარდაჭერილი</string>
+    <string name="textCopied">ტექსტი დაკოპირდა</string>
+
+    <!-- Descriptions -->
+    <string name="descFavourites">რჩეულებში დამატება</string>
+    <string name="descTTS">სიტყვის წარმოთქმა</string>
+    <string name="descCopy">ტექსტის კოპირება</string>
+
+    <!-- Preferences -->
+    <string name="prefCatGeneral">მთავარი</string>
+    <string name="prefCatAbout">აპლიკაციის შესახებ</string>
+    <string name="prefLanguage">ენა</string>
+    <string name="prefDownload">ლექსიკონის ჩამოტვირთვა</string>
+    <string name="prefDownloadedSummary">ჩამოტვირთული ლექსიკონის ვერსია: %d</string>
+    <string name="prefNotDownloadedSummary">ლექსიკონი არ არის ჩამოტვირთული, დააჭირეთ ჩამოსატვირთად</string>
+    <string name="prefNoUpdatesContent">ლექსიკონის განახლება არ არის ხელმისაწვდომი</string>
+    <string name="prefUpdateContent">ვერსია: %1$s\nჩამოტვირთვის მოცულობა: %2$s\nამოარქივებულის მოცულობა: %3$s</string>
+    <string name="prefLicenses">Open source ლიცენზიები</string>
+    <string name="prefLicensesSummary">Open source პროგრამული უზრუნველყოფის ლიცენზიის დეტალები</string>
+    <string name="prefVersion">ვერსია</string>
+
+</resources>
