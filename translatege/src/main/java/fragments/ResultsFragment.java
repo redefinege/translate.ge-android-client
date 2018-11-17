@@ -38,6 +38,12 @@ public class ResultsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        textToSpeech = new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                textToSpeech.setLanguage(Locale.US);
+            }
+        });
     }
 
     @Override
@@ -69,8 +75,6 @@ public class ResultsFragment extends Fragment {
 
                     @Override
                     public void onTTSClicked(final String word) {
-                        // initialize TTS engine if not yet
-                        if (textToSpeech == null) textToSpeech = getTextToSpeech();
                         ttsSpeak(word);
                     }
 
@@ -97,15 +101,6 @@ public class ResultsFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
         if (textToSpeech != null) textToSpeech.shutdown();
-    }
-
-    private TextToSpeech getTextToSpeech() {
-        return new TextToSpeech(getActivity(), new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                textToSpeech.setLanguage(Locale.US);
-            }
-        });
     }
 
     private void ttsSpeak(String word) {
