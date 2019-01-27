@@ -29,12 +29,12 @@ import ge.redefine.translatege.App;
 import ge.redefine.translatege.MainActivity;
 import ge.redefine.translatege.R;
 
-class APIUrl {
+class ApiUrl {
     private String username;
     private String gistId;
     private String filename;
 
-    APIUrl(String username, String gistId, String filename) {
+    ApiUrl(String username, String gistId, String filename) {
         this.username = username;
         this.gistId = gistId;
         this.filename = filename;
@@ -47,12 +47,11 @@ class APIUrl {
 
 public class DatabaseDownloader {
 
-    private static final APIUrl API_URL = new APIUrl(
-            "thisdotvoid",
+    private static final ApiUrl API_URL = new ApiUrl(
+            "xxzefgh",
             "74bd9876c2a7291066c2ef171cc390df",
             "version.json"
     );
-    private static final String DATABASE_API = "https://api.brunjadze.xyz/v1/app/translatege/get_latest_database";
     private static final String ZIP_FILE = "dictionary.zip";
     private static final int TASK_DOWNLOAD = 1;
     private static final int TASK_UNZIP = 2;

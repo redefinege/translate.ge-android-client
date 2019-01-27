@@ -20,8 +20,8 @@ public class TranslateAPI {
     private RequestQueue mRequestQueue;
     private ResponseListener responseListener;
 
-    private static final String URL_SEARCH = "http://translate.ge/api/:query";
-    private static final String URL_FULL_SEARCH = "http://translate.ge/api/search/:query";
+    private static final String URL_SEARCH = "https://translate.ge/api/:query";
+    private static final String URL_FULL_SEARCH = "https://translate.ge/api/search/:query";
     public static final String JSON_ROWS = "rows";
     public static final String JSON_VALUE = "value";
     public static final String JSON_TEXT = "Text";

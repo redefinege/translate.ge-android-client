@@ -23,7 +23,6 @@ import extras.FavouritesProvider;
 import extras.ResultsStruct;
 import ge.redefine.translatege.R;
 
-
 public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.ResultsViewHolder> {
 
     private LayoutInflater mInflater;
@@ -34,17 +33,17 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.ResultsV
     private TextToSpeech textToSpeech;
     private OnFavouritesClickedListener listener;
 
-    public ResultsAdapter(ArrayList<ResultsStruct> list,
-                          Context context,
-                          TextToSpeech textToSpeech,
-                          OnFavouritesClickedListener listener) {
-        itemList = list;
-        this.listener = listener;
-        mContext = context;
-        mInflater = LayoutInflater.from(context);
+    public ResultsAdapter(ArrayList<ResultsStruct> _list,
+                          Context _context,
+                          TextToSpeech _textToSpeech,
+                          OnFavouritesClickedListener _listener) {
+        itemList = _list;
+        listener = _listener;
+        mContext = _context;
+        mInflater = LayoutInflater.from(_context);
         favouritesProvider = FavouritesProvider.getInstance();
-        this.textToSpeech = textToSpeech;
-        clipboardManager = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        textToSpeech = _textToSpeech;
+        clipboardManager = (ClipboardManager) _context.getSystemService(Context.CLIPBOARD_SERVICE);
     }
 
     public void refreshListItems() {
@@ -85,12 +84,12 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.ResultsV
         }
     }
 
-    private boolean syncFavourites(int position) {
+    private void syncFavourites(int position) {
         ResultsStruct current = itemList.get(position);
         if (current.isFavourite()) {
-            return favouritesProvider.insertWord(current.word()) >= 0;
+            favouritesProvider.insertWord(current.word());
         } else {
-            return favouritesProvider.deleteWord(current.word()) > 0;
+            favouritesProvider.deleteWord(current.word());
         }
     }
 
